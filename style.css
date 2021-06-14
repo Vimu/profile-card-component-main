@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --Dark-cyan: hsl(185, 75%, 39%);
+    --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --Dark-grayish-blue: hsl(227, 10%, 46%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-cyan);
+}
+.container {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 20px;
+    overflow: hidden;
+    background: url(./images/bg-pattern-bottom.svg) bottom -550px right -770px no-repeat, url(./images/bg-pattern-top.svg) top -800px left -650px no-repeat;
+}
+.container .card{
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 20px;
+}
+.container .card .card-header img{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    margin: 0;
+}
+.container .card .card-profile{
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+.container .card .card-profile img{
+    text-align: center;
+    border-radius: 50%;
+    border: white solid 8px;
+    width: 30%;
+    margin: -50px auto 0;
+}
+.container .card .card-profile h1{
+    font-size: 1.125rem;
+    font-weight: 700;
+    color: var(--Very-dark-desaturated-blue);
+    margin: 10px 0;
+}
+.container .card .card-profile h1 span{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+}
+.container .card .card-profile h4{
+    color: var(--Dark-grayish-blue);
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+.container .card .card-profile ul{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 20px 30px;
+    border-top:solid 1px hsl(220, 7%, 92%) ;
+}
+.container .card .card-profile ul li{
+    color: var(--Very-dark-desaturated-blue);
+    margin-right: 30px;
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+.container .card .card-profile ul li span{
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Desktop view */
+@media (min-width:1440px) {
+    .container{
+        background: url(./images/bg-pattern-bottom.svg) bottom -420px right -150px no-repeat, url(./images/bg-pattern-top.svg) top -500px left -100px no-repeat;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+    .card{
+        width: 400px;
+        height: 450px;
+        }
+}
